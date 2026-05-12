@@ -18,11 +18,9 @@
       --done: #bbb4ac;
       --shadow: 0 4px 24px rgba(80,60,40,0.10);
       --radius: 18px;
-<<<<<<< HEAD
-=======
       --overdue: #c0392b;
       --overdue-light: #fce8e6;
->>>>>>> 771011ff954a6addc31dd4dba4c64b2bb0fcff34
+
     }
 
     body {
@@ -53,23 +51,15 @@
       font-weight: 300;
     }
 
-<<<<<<< HEAD
-=======
+
+
     /* ── タスク入力 ── */
->>>>>>> 771011ff954a6addc31dd4dba4c64b2bb0fcff34
     .input-card {
       background: var(--card);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
-<<<<<<< HEAD
-      padding: 16px;
-      display: flex;
-      gap: 10px;
-      margin-bottom: 28px;
-    }
 
-    .input-card input {
-=======
+
       padding: 14px 16px;
       display: flex;
       flex-direction: column;
@@ -84,7 +74,7 @@
     }
 
     .input-card input[type="text"] {
->>>>>>> 771011ff954a6addc31dd4dba4c64b2bb0fcff34
+
       flex: 1;
       border: none;
       outline: none;
@@ -95,11 +85,9 @@
       padding: 4px 2px;
     }
 
-<<<<<<< HEAD
-    .input-card input::placeholder { color: var(--done); }
-=======
+
     .input-card input[type="text"]::placeholder { color: var(--done); }
->>>>>>> 771011ff954a6addc31dd4dba4c64b2bb0fcff34
+
 
     .input-card button {
       background: var(--accent);
@@ -117,11 +105,7 @@
       transition: background 0.18s, transform 0.12s;
     }
 
-<<<<<<< HEAD
-    .input-card button:hover { background: #b36530; }
-    .input-card button:active { transform: scale(0.93); }
 
-=======
     .input-card button:hover  { background: #b36530; }
     .input-card button:active { transform: scale(0.93); }
 
@@ -226,7 +210,7 @@
     .search-clear:hover   { color: var(--text); }
 
     /* ── タスクリスト ── */
->>>>>>> 771011ff954a6addc31dd4dba4c64b2bb0fcff34
+
     .task-list { display: flex; flex-direction: column; gap: 10px; }
 
     .task-item {
@@ -234,13 +218,7 @@
       border-radius: var(--radius);
       box-shadow: var(--shadow);
       display: flex;
-<<<<<<< HEAD
-      align-items: center;
-      padding: 14px 16px;
-      gap: 14px;
-      transition: opacity 0.2s, transform 0.2s;
-      animation: slideIn 0.22s cubic-bezier(.22,1,.36,1);
-=======
+
       align-items: flex-start;
       padding: 14px 16px;
       gap: 14px;
@@ -253,7 +231,6 @@
     .task-item.overdue {
       border-left-color: var(--overdue);
       background: #fffafa;
->>>>>>> 771011ff954a6addc31dd4dba4c64b2bb0fcff34
     }
 
     @keyframes slideIn {
@@ -274,10 +251,8 @@
       justify-content: center;
       transition: border-color 0.15s, background 0.15s;
       position: relative;
-<<<<<<< HEAD
-=======
+
       margin-top: 1px;
->>>>>>> 771011ff954a6addc31dd4dba4c64b2bb0fcff34
     }
 
     .check-btn::after {
@@ -294,10 +269,7 @@
     .task-item.done .check-btn { border-color: var(--accent); background: var(--accent-light); }
     .task-item.done .check-btn::after { opacity: 1; transform: scale(1); }
 
-<<<<<<< HEAD
-    .task-text {
-      flex: 1;
-=======
+
     /* テキスト＋締め切り日のラッパー */
     .task-body {
       flex: 1;
@@ -308,43 +280,27 @@
     }
 
     .task-text {
->>>>>>> 771011ff954a6addc31dd4dba4c64b2bb0fcff34
       font-size: 0.97rem;
       color: var(--text);
       cursor: pointer;
       user-select: none;
-<<<<<<< HEAD
-      transition: color 0.2s;
-      word-break: break-word;
-      position: relative;
-=======
+
       word-break: break-word;
       position: relative;
       transition: color 0.2s;
->>>>>>> 771011ff954a6addc31dd4dba4c64b2bb0fcff34
     }
 
     .task-text::after {
       content: '';
       position: absolute;
-<<<<<<< HEAD
-      left: 0;
-      top: 50%;
-      width: 0;
-      height: 1.5px;
-=======
+
       left: 0; top: 50%;
       width: 0; height: 1.5px;
->>>>>>> 771011ff954a6addc31dd4dba4c64b2bb0fcff34
       background: var(--done);
       transition: width 0.25s cubic-bezier(.22,1,.36,1);
     }
 
-<<<<<<< HEAD
-    .task-item.done .task-text { color: var(--done); }
-    .task-item.done .task-text::after { width: 100%; }
 
-=======
     .task-item.done .task-text        { color: var(--done); }
     .task-item.done .task-text::after { width: 100%; }
 
@@ -376,7 +332,7 @@
       text-decoration: line-through;
     }
 
->>>>>>> 771011ff954a6addc31dd4dba4c64b2bb0fcff34
+
     .del-btn {
       background: transparent;
       border: none;
@@ -391,16 +347,12 @@
       align-items: center;
       justify-content: center;
       transition: color 0.15s, background 0.15s;
-<<<<<<< HEAD
-    }
 
-    .del-btn:hover { color: #c0392b; background: #fce8e6; }
-=======
       margin-top: -2px;
     }
 
     .del-btn:hover { color: var(--overdue); background: var(--overdue-light); }
->>>>>>> 771011ff954a6addc31dd4dba4c64b2bb0fcff34
+
 
     .empty {
       text-align: center;
@@ -411,14 +363,10 @@
       line-height: 1.8;
     }
 
-<<<<<<< HEAD
-    .empty span { display: block; font-size: 2rem; margin-bottom: 8px; }
 
-    /* 編集用input */
-=======
     .empty-icon { display: block; font-size: 2rem; margin-bottom: 8px; }
 
->>>>>>> 771011ff954a6addc31dd4dba4c64b2bb0fcff34
+
     .task-edit {
       flex: 1;
       border: none;
@@ -447,11 +395,6 @@
       <p>やることを整理しよう</p>
     </header>
 
-<<<<<<< HEAD
-    <div class="input-card">
-      <input type="text" id="taskInput" placeholder="新しいタスクを入力…" maxlength="100">
-      <button id="addBtn" title="追加">＋</button>
-=======
     <!-- タスク入力 -->
     <div class="input-card">
       <div class="input-row">
@@ -476,7 +419,6 @@
       <span class="search-icon">🔍</span>
       <input type="text" id="searchInput" placeholder="タスク名で絞り込む…">
       <button class="search-clear" id="searchClear" title="クリア">×</button>
->>>>>>> 771011ff954a6addc31dd4dba4c64b2bb0fcff34
     </div>
 
     <ul class="task-list" id="taskList"></ul>
@@ -484,22 +426,7 @@
   </div>
 
   <script>
-<<<<<<< HEAD
-    let tasks = [];
 
-    const input   = document.getElementById('taskInput');
-    const addBtn  = document.getElementById('addBtn');
-    const listEl  = document.getElementById('taskList');
-    const statsEl = document.getElementById('stats');
-
-    function addTask() {
-      const text = input.value.trim();
-      if (!text) return;
-      tasks.push({ id: Date.now(), text, done: false });
-      input.value = '';
-      render();
-      input.focus();
-=======
     const STORAGE_KEY = 'todo-tasks';
 
     let tasks         = load();
@@ -545,72 +472,38 @@
       save();
       render();
       taskInput.focus();
->>>>>>> 771011ff954a6addc31dd4dba4c64b2bb0fcff34
+
     }
 
     function toggleTask(id) {
       const t = tasks.find(t => t.id === id);
       if (t) t.done = !t.done;
-<<<<<<< HEAD
-=======
+
       save();
->>>>>>> 771011ff954a6addc31dd4dba4c64b2bb0fcff34
       render();
     }
 
     function deleteTask(id) {
       tasks = tasks.filter(t => t.id !== id);
-<<<<<<< HEAD
-=======
+
       save();
->>>>>>> 771011ff954a6addc31dd4dba4c64b2bb0fcff34
+
       render();
     }
 
     function editTask(id, spanEl) {
       const t = tasks.find(t => t.id === id);
       if (!t) return;
-<<<<<<< HEAD
 
-      const editInput = document.createElement("input");
-      editInput.className = "task-edit";
-=======
       const editInput = document.createElement('input');
       editInput.className = 'task-edit';
->>>>>>> 771011ff954a6addc31dd4dba4c64b2bb0fcff34
+
       editInput.value = t.text;
       spanEl.replaceWith(editInput);
       editInput.focus();
       editInput.select();
 
-<<<<<<< HEAD
-      function save() {
-        const newText = editInput.value.trim();
-        if (newText) t.text = newText;
-        render();
-      }
 
-      editInput.addEventListener("blur", save);
-      editInput.addEventListener("keydown", function(e) {
-        if (e.key === "Enter") editInput.blur();
-        if (e.key === "Escape") { editInput.removeEventListener("blur", save); render(); }
-      });
-    }
-
-    function render() {
-      listEl.innerHTML = '';
-
-      if (tasks.length === 0) {
-        const li = document.createElement('li');
-        li.className = 'empty';
-
-        const icon = document.createElement('span');
-        icon.textContent = '✦';
-
-        const msg = document.createElement('span');
-        msg.textContent = 'タスクがありません 上の入力欄から追加してみましょう';
-
-=======
       function saveEdit() {
         const newText = editInput.value.trim();
         if (newText) t.text = newText;
@@ -680,18 +573,13 @@
           currentFilter === 'active' ? '未完了のタスクはありません' :
           currentFilter === 'done'   ? '完了済みのタスクはありません' :
                                        'タスクがありません　上の入力欄から追加してみましょう';
->>>>>>> 771011ff954a6addc31dd4dba4c64b2bb0fcff34
+
         li.append(icon, msg);
         listEl.appendChild(li);
         statsEl.textContent = '';
         return;
       }
 
-<<<<<<< HEAD
-      tasks.forEach(task => {
-        const li = document.createElement('li');
-        li.className = 'task-item' + (task.done ? ' done' : '');
-=======
       filtered.forEach(task => {
         const overdue = isOverdue(task);
 
@@ -699,37 +587,14 @@
         li.className = 'task-item' +
           (task.done ? ' done' : '') +
           (overdue   ? ' overdue' : '');
->>>>>>> 771011ff954a6addc31dd4dba4c64b2bb0fcff34
+
 
         const checkBtn = document.createElement('button');
         checkBtn.className = 'check-btn';
         checkBtn.title = task.done ? '未完了に戻す' : '完了にする';
         checkBtn.addEventListener('click', () => toggleTask(task.id));
 
-<<<<<<< HEAD
-        const span = document.createElement('span');
-        span.className = 'task-text';
-        span.textContent = task.text;
-        span.addEventListener('click', () => toggleTask(task.id));
-        span.addEventListener('dblclick', () => editTask(task.id, span)); // ダブルクリックで編集
 
-        const delBtn = document.createElement('button');
-        delBtn.className = 'del-btn';
-        delBtn.title = '削除';
-        delBtn.textContent = '×';
-        delBtn.addEventListener('click', () => deleteTask(task.id));
-
-        li.append(checkBtn, span, delBtn);
-        listEl.appendChild(li);
-      });
-
-      const done = tasks.filter(t => t.done).length;
-      statsEl.textContent = `${done} / ${tasks.length} 完了`;
-    }
-
-    addBtn.addEventListener('click', addTask);
-    input.addEventListener('keydown', e => { if (e.key === 'Enter') addTask(); });
-=======
         const body = document.createElement('div');
         body.className = 'task-body';
 
@@ -792,7 +657,7 @@
 
     addBtn.addEventListener('click', addTask);
     taskInput.addEventListener('keydown', e => { if (e.key === 'Enter') addTask(); });
->>>>>>> 771011ff954a6addc31dd4dba4c64b2bb0fcff34
+
 
     render();
   </script>
